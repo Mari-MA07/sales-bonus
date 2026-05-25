@@ -18,7 +18,7 @@ function calculateSimpleRevenue(purchase, _product) {
  * @returns {number}
  */
 function calculateBonusByProfit(index, total, seller) {
-    const { profit } = seller;
+    const profit = seller.totalProfit;
     
     // Первое место (индекс 0) - 15%
     if (index === 0) {
